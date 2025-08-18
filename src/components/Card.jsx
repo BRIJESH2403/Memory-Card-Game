@@ -19,11 +19,7 @@ const Card = ({ card, onClick, disabled, isPreviewMode }) => {
           card.flipped || card.matched || isPreviewMode ? "rotate-y-180" : ""
         }`}
       >
-        <div className="absolute inset-0 rounded-md bg-gradient-to-br from-blue-600 to-purple-700 flex items-center justify-center backface-hidden">
-          <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center">
-            <div className="w-3 h-3 bg-white/30 rounded-full"></div>
-          </div>
-        </div>
+        <div className="absolute inset-0 rounded-md bg-gradient-to-br from-blue-600 to-purple-700 flex items-center justify-center backface-hidden"></div>
 
         <div className="absolute inset-0 rounded-md bg-gradient-to-br from-white to-gray-100 flex items-center justify-center backface-hidden rotate-y-180 border border-gray-200 shadow">
           <span className="text-2xl md:text-3xl">{card.image}</span>

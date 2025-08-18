@@ -14,8 +14,7 @@ const GameStats = ({ moves, time, gameStatus, isTimerEnabled }) => {
           <div className="text-sm text-gray-300">Time</div>
           <div className="text-2xl font-bold text-white">{formatTime(time)}</div>
         </div>
-      )}
-      
+      )}    
       <div className="bg-white/10 backdrop-blur rounded-lg px-4 py-2 text-center">
         <div className="text-sm text-gray-300">Status</div>
         <div className={`text-lg font-semibold ${

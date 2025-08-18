@@ -43,7 +43,7 @@ const MemoryCardGame = () => {
       <div className="container mx-auto max-w-6xl">
         {/* Header */}
         <header className="text-center mb-8">
-          <h1 className="text-5xl font-bold mb-2 bg-gradient-to-r from-yellow-400 to-pink-400 bg-clip-text text-transparent">
+          <h1 className="text-5xl font-bold mb-2 text-white">
             Memory Card Game
           </h1>
           <p className="text-gray-300 text-lg">
@@ -107,7 +107,7 @@ const MemoryCardGame = () => {
             <h3 className="text-xl font-semibold mb-3">How to Play</h3>
             <div className="text-sm text-gray-300 space-y-2">
               <p>
-                • Click "Start Game" to begin with a 3-second preview of all
+                • Click "Start Game" to begin with a 5-second preview of all
                 cards
               </p>
               <p>• Memorize the card positions during the preview</p>

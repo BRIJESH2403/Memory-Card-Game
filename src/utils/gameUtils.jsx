@@ -10,15 +10,15 @@ export const shuffleArray = (array) => {
 export const formatTime = (seconds) => {
   const mins = Math.floor(seconds / 60);
   const secs = seconds % 60;
-  return `${mins}:${secs.toString().padStart(2, '0')}`;
+  return `${mins}:${secs.toString().padStart(2, "0")}`;
 };
 
 export const generateCards = (difficulty, CARD_IMAGES, DIFFICULTY_LEVELS) => {
   const { pairs } = DIFFICULTY_LEVELS[difficulty];
-  const selectedImages = CARD_IMAGES.slice(0, pairs);
+  const selectedImages = shuffleArray(CARD_IMAGES).slice(0, pairs);
   const cardPairs = selectedImages.flatMap((image, index) => [
     { id: `${index}-a`, image, matched: false, flipped: false },
-    { id: `${index}-b`, image, matched: false, flipped: false }
+    { id: `${index}-b`, image, matched: false, flipped: false },
   ]);
   return shuffleArray(cardPairs);
 };

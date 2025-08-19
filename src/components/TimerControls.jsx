@@ -1,6 +1,6 @@
 import React from 'react';
-
-const TimerControls = ({ isTimerEnabled, onToggleTimer, isTimerRunning, onStartStopTimer, gameStatus }) => {
+// isTimerRunning, onStartStopTimer,  use this if you want start resume button 
+const TimerControls = ({ isTimerEnabled, onToggleTimer, gameStatus }) => {
   return (
     <div className="flex items-center justify-center gap-3 mb-4">
       <label className="flex items-center gap-2 text-white">
@@ -14,7 +14,7 @@ const TimerControls = ({ isTimerEnabled, onToggleTimer, isTimerRunning, onStartS
         <span className="text-sm">Enable Timer</span>
       </label>
       
-      {isTimerEnabled && (
+      {/* {isTimerEnabled && (
         <button
           onClick={onStartStopTimer}
           disabled={gameStatus === 'won'}
@@ -26,7 +26,7 @@ const TimerControls = ({ isTimerEnabled, onToggleTimer, isTimerRunning, onStartS
         >
           {isTimerRunning ? '⏸️ Pause Timer' : '▶️ Start Timer'}
         </button>
-      )}
+      )} */}
     </div>
   );
 };

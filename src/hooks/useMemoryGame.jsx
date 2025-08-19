@@ -7,7 +7,7 @@ const useMemoryGame = (difficulty) => {
   const [flippedCards, setFlippedCards] = useState([]);
   const [moves, setMoves] = useState(0);
   const [time, setTime] = useState(0);
-  const [gameStatus, setGameStatus] = useState("ready"); // 'ready', 'preview', 'playing', 'won'
+  const [gameStatus, setGameStatus] = useState("ready"); 
   const [disabled, setDisabled] = useState(false);
   const [isTimerEnabled, setIsTimerEnabled] = useState(false);
   const [isTimerRunning, setIsTimerRunning] = useState(false);
@@ -101,6 +101,7 @@ const useMemoryGame = (difficulty) => {
   );
 
   // Check for matches
+
   useEffect(() => {
     if (flippedCards.length === 2) {
       setDisabled(true);
